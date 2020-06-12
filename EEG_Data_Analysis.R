@@ -10,7 +10,6 @@ library(lmerTest)
 library(psych)
 require(MuMIn)
 library(ggpubr)
-library(rmcorr)
 ###############################################################################################################################################
 #1 set directory
 setwd('/Users/Eoin/Documents/EEG/')
@@ -86,7 +85,6 @@ r.squaredGLMM(Power_10_Intercept)
 r.squaredGLMM(Power_10_null)
 r.squaredGLMM(Power_10_null1) 
 r.squaredGLMM(Power_10) 
-
 ###############################################################################################################################################
 #T-Tests on mean values at both D1 and D7 for each measure:
 means <-read.csv("EEG_Detrended_Day_Means.csv", header = T)
@@ -100,10 +98,8 @@ t.test(Power_10_Day7 ~ Group, data = means, var.equal = FALSE)
 t.test(Slope_Base ~ Group, data = means, var.equal = FALSE)
 t.test(Slope_Day1 ~ Group, data = means, var.equal = FALSE)
 t.test(Slope_Day7 ~ Group, data = means, var.equal = FALSE)
-
 ##############################################################################################################################################
 #Summary:
-
 #1 - Mixed effects:
 #Slope        ----> Significant time effect p<0.001, significant group effect p = 0.03 & significant interaction p<0.001. ***
 #Power_10_Log ----> No significant group, time orinteraction effects
@@ -168,7 +164,6 @@ t.test(Power_day1  ~ Group, paired=FALSE, var.equal=FALSE, data=means_classic) #
 t.test(Power_day7  ~ Group, paired=FALSE, var.equal=FALSE, data=means_classic) #not sig
 ##############################################################################################################################################
 #Summary:
-
 #1 - Mixed effects:
 #Power_10_Log ----> significant group (p=0.03), time (p<0.001) and interaction (p<0.001)
 
