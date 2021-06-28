@@ -1,5 +1,6 @@
 #EEG Data Analysis - Escitalopram and Neuroplasticity Project, Zsido & Molloy et al. 2021
 #Code by Eoin N Molloy & Rachel G. Zsido
+#This is an older version of the final script, which can be found here: https://github.com/EGGLab-2021/Escitalopram_rsEEG_Analysis  
 ###############################################################################################################################################
 #0 Load necessary packages
 library(magrittr)
