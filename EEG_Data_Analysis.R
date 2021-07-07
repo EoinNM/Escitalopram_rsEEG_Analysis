@@ -1,5 +1,5 @@
 #EEG Data Analysis - Escitalopram and Neuroplasticity Project, Zsido & Molloy et al. 2021
-#Code by Eoin N Molloy
+#Code by Eóin N Molloy
 ###############################################################################################################################################
 #0 Load necessary packages
 library(magrittr)
